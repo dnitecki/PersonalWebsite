@@ -1,90 +1,105 @@
-
-.submit-button:hover{
-    background-color: rgba(255,255,255,.1);
-    transition: .2s ease-in-out;
+.submit-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.2s ease-in-out;
 }
 .submit-button {
-    background: linear-gradient(-45deg,rgba(255,255,255,.2),rgba(255,255,255,.2),rgba(255,255,255,.2),rgba(255,255,255,.2),rgba(255,255,255,.2), rgba(255,255,255,.3), rgba(255,255,255,.2),rgba(255,255,255,.2),rgba(255,255,255,.2),rgba(255,255,255,.2),rgba(255,255,255,.2),rgba(255,255,255,.2));
-    background-size: 400% 400%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 20rem;
-    padding: .8rem;
-    margin-bottom: 2rem;
-    border: transparent;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    transition: .2s ease-in-out;
-    animation: shine 8s ease infinite;
-    
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 20rem;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  border: transparent;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  transition: 0.2s ease-in-out;
+  animation: shine 8s ease infinite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
-.form{
-    display: flex;
-    flex-direction: column;
+.form {
+  display: flex;
+  flex-direction: column;
 }
-.input:focus{
-    border: solid 2px;
-    border-color:#fff;
-    background-color:rgba(255,255,255,.1) ;
-    transition: .3s ease-in-out;
+.input:focus {
+  border: solid 2px;
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease-in-out;
 }
-.input{
-    background-color:rgba(255,255,255,.2);
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    width: 20rem;
-    padding: .8rem;
-    border-color: transparent;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 300;
+.input {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  width: 20rem;
+  padding: 0.8rem;
+  border-color: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
-.text-area:focus{
-    border: solid 2px;
-    border-color:#fff;
-    background-color:rgba(255,255,255,.1) ;
-    transition: .3s ease-in-out;
+.text-area:focus {
+  border: solid 2px;
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease-in-out;
 }
-.text-area{
-    background-color:rgba(255,255,255,.2);
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    width: 20rem;
-    height: 5rem;
-    padding: .8rem;
-    border-color: transparent ;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 300;
+.text-area {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  width: 20rem;
+  height: 5rem;
+  padding: 0.8rem;
+  border-color: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .label {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    margin-bottom: .5rem;
-    color:rgba(255,255,255,.8);
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
 }
-.button-label{
-    font-size: 1.2rem;
-    font-weight: lighter;  
-    background-color: transparent;
-    border: 0;
-    margin-left: 1rem;
+.button-label {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  background-color: transparent;
+  border: 0;
+  margin-left: 1rem;
 }
 .button-icon {
-    height: 1.2rem;
-    width: 1.2rem;
-    filter: invert(.8);
+  height: 1.2rem;
+  width: 1.2rem;
+  filter: invert(0.8);
 }
 @keyframes shine {
-    0%{       
-        background-position: 0% 50%;
-    } 
-    50%{       
-        background-position: 100% 50%;
-    }
-    100%{       
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

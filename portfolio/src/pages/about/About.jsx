@@ -1,9 +1,13 @@
 import "./About.scss";
 import React from "react";
 import { motion } from "framer-motion";
+import { Timeline } from "primereact/timeline";
+import { Card } from "primereact/card";
+import { Button } from "primereact/button";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import ReactTooltip from "react-tooltip";
 import { SkillItems } from "./SkillItems";
+import { Experience } from "./Experience";
 
 export default function About() {
   const pageVariants = {
@@ -38,30 +42,41 @@ export default function About() {
       variants={pageVariants}
       transition={pageTransitions}
     >
-      <div className="wrapper-about">
-        <div className="header-about">
-          <div className="title">Skills and Experience</div>
-        </div>
-        <div className="about-container">
-          <motion.div className="about-list">
-            {SkillItems.map((skills) => {
+      <div className="app__about">
+        <div className="title">Skills and Experience</div>
+
+        <div className="app__about-container">
+          <motion.div className="app__about-list">
+            {SkillItems.map((skill) => {
               return (
                 <motion.div
                   whileInView={{ opacity: [0, 1] }}
                   transition={{ duration: 0.5 }}
-                  className="about-item flex"
+                  className="app__about-item app__flex"
                 >
-                  <div className="flex">
-                    <img src={skills.icon} alt="icon" />
+                  <div className="app__flex">
+                    <img src={skill.icon} alt={skill.name} />
                   </div>
+                  <p className="p-text">{skill.name}</p>
                 </motion.div>
               );
             })}
-            ,
+          </motion.div>
+          <motion.div>
+            <div className="card">
+              <Timeline
+                value={Experience}
+                opposite={(item) => item.status}
+                content={(item) => (
+                  <small className="p-text-secondary">{item.date}</small>
+                )}
+              />
+            </div>
           </motion.div>
         </div>
-        <div className="footer"></div>
       </div>
+      <br />
+      <br />
     </motion.div>
   );
 }

@@ -36,19 +36,15 @@ export default function Resume() {
       variants={pageVariants}
       transition={pageTransitions}
     >
-      <div className="wrapper-portfolio">
-        <div className="header-portfolio"></div>
-        <div className="body-portfolio">
-          <div
-            onClick={() => {
-              history.push("/");
-            }}
-            className="title"
-          >
-            Resume
-          </div>
+      <div className="app__resume">
+        <div
+          onClick={() => {
+            history.push("/");
+          }}
+          className="title"
+        >
+          Resume
         </div>
-        <div className="footer"></div>
       </div>
     </motion.div>
   );

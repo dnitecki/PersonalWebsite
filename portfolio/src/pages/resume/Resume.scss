@@ -1,31 +1,15 @@
 .title {
-    align-items: center;
-    text-align: center;
-    font-family: Roboto;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: lighter;
-    margin-top:3.5rem;
-    
+  align-items: center;
+  text-align: center;
+  font-family: Roboto;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 3.5rem;
 }
-.wrapper-portfolio {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "header"
-    "body"
-    "footer"
-    ;
-}
-.header-portfolio{
-    grid-area: header;
-    display: flex;
-    margin: 2rem;
-    justify-content: left !important;
-    
-}
-.body-portfolio {
-    grid-area: body;
+.app__resume {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  flex-direction: column;
 }

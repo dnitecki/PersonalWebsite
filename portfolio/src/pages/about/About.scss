@@ -81,20 +81,22 @@
     }
   }
 }
-@media screen and (max-width: 900px) {
-  .timeline-demo .customized-timeline .p-timeline-event:nth-child(even) {
-    flex-direction: row !important;
-  }
-  .timeline-demo
-    .customized-timeline
-    .p-timeline-event:nth-child(even)
-    .p-timeline-event-content {
-    text-align: left !important;
-  }
-  .timeline-demo .customized-timeline .p-timeline-event-opposite {
-    flex: 0;
-  }
-  .timeline-demo .customized-timeline .p-card {
-    margin-top: 1rem;
-  }
+.app__about-footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: normal;
+  text-align: center;
+}
+.about-down-arrow:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.about-down-arrow {
+  filter: invert(1);
+  opacity: 0.5;
+  height: 2.5rem;
+  width: 2.5rem;
 }

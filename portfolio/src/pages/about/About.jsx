@@ -10,6 +10,7 @@ import { SkillItems } from "./SkillItems";
 import { Experience } from "./Experience";
 
 export default function About() {
+  let history = useHistory();
   const pageVariants = {
     animate: {
       opacity: 1,
@@ -62,21 +63,18 @@ export default function About() {
               );
             })}
           </motion.div>
-          <motion.div>
-            <div className="card">
-              <Timeline
-                value={Experience}
-                opposite={(item) => item.status}
-                content={(item) => (
-                  <small className="p-text-secondary">{item.date}</small>
-                )}
-              />
-            </div>
-          </motion.div>
+        </div>
+        <div className="app__about-footer">
+          <img
+            className="about-down-arrow"
+            onClick={() => {
+              history.push("/resume");
+            }}
+            src="./assets/interface-arrows-button-down.svg"
+            alt="icon"
+          />
         </div>
       </div>
-      <br />
-      <br />
     </motion.div>
   );
 }

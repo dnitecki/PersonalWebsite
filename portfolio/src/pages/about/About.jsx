@@ -1,9 +1,11 @@
 import "./About.scss";
+import React from "react";
 import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import ReactTooltip from "react-tooltip";
+import { SkillItems } from "./SkillItems";
 
 export default function About() {
-  let history = useHistory();
   const pageVariants = {
     animate: {
       opacity: 1,
@@ -36,17 +38,27 @@ export default function About() {
       variants={pageVariants}
       transition={pageTransitions}
     >
-      <div className="wrapper-portfolio">
-        <div className="header-portfolio"></div>
-        <div className="body-portfolio">
-          <div
-            onClick={() => {
-              history.push("/");
-            }}
-            className="title"
-          >
-            About Me
-          </div>
+      <div className="wrapper-about">
+        <div className="header-about">
+          <div className="title">Skills and Experience</div>
+        </div>
+        <div className="about-container">
+          <motion.div className="about-list">
+            {SkillItems.map((skills) => {
+              return (
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className="about-item flex"
+                >
+                  <div className="flex">
+                    <img src={skills.icon} alt="icon" />
+                  </div>
+                </motion.div>
+              );
+            })}
+            ,
+          </motion.div>
         </div>
         <div className="footer"></div>
       </div>

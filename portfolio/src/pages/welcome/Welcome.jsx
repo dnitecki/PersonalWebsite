@@ -8,7 +8,7 @@ import useSound from "use-sound";
 export default function Welcome() {
   const welcomeSound = "./assets/MA_Readsounds_InterfaceNotification_7.wav";
   const [play] = useSound(welcomeSound, {
-    volume: 0.1,
+    volume: 0.3,
   });
   let history = useHistory();
   const textRef = useRef();

@@ -90,6 +90,12 @@
   font-weight: normal;
   text-align: center;
 }
+.app__about-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
 .about-down-arrow:hover {
   cursor: pointer;
   opacity: 0.8;
@@ -99,4 +105,85 @@
   opacity: 0.5;
   height: 2.5rem;
   width: 2.5rem;
+}
+.showMore:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.2s ease-in-out;
+}
+.showMore {
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 10rem;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  border: transparent;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  transition: 0.2s ease-in-out;
+  animation: shine 8s ease infinite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.showLess:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.2s ease-in-out;
+}
+.showLess {
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 10rem;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  border: transparent;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  transition: 0.2s ease-in-out;
+  animation: shine 8s ease infinite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

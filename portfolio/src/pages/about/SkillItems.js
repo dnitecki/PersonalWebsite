@@ -24,11 +24,11 @@ export const SkillItems = [
     icon: "./assets/icons8-typescript-144.png",
   },
   {
-    name: "HTML 5",
+    name: "HTML5",
     icon: "./assets/icons8-html-5-144.png",
   },
   {
-    name: "CSS",
+    name: "CSS3",
     icon: "./assets/icons8-css3-144.png",
   },
   {

@@ -6,19 +6,19 @@ export default function Contact() {
   const pageVariants = {
     animate: {
       opacity: 1,
-      y: 0,
+      // y: 0,
     },
     initial: {
       opacity: 0,
-      y: "100vh",
+      // y: "100vh",
     },
     exit: {
       opacity: 0,
-      y: "-100vh",
+      // y: "-100vh",
     },
   };
   const pageTransitions = {
-    duration: 1.25,
+    duration: 0.5,
     type: "tween",
     ease: "easeOut",
   };

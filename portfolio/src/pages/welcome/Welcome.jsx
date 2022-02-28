@@ -3,8 +3,12 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import useSound from "use-sound";
 
 export default function Welcome() {
+  const welcomeSound = "./assets/MA_Readsounds_InterfaceNotification_7.wav";
+  const [play] = useSound(welcomeSound);
+
   const textRef = useRef();
 
   useEffect(() => {
@@ -59,6 +63,7 @@ export default function Welcome() {
           <div className="pulse">
             <button
               onClick={() => {
+                play();
                 history.push("/aboutme");
               }}
               class="button"
@@ -70,6 +75,7 @@ export default function Welcome() {
           <img
             className="down-arrow"
             onClick={() => {
+              play();
               history.push("/aboutme");
             }}
             src="./assets/interface-arrows-button-down.svg"

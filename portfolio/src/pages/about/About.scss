@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .title {
   align-items: center;
   text-align: center;
@@ -175,6 +178,10 @@
   transition: 0.2s ease-in-out;
   animation: shine 8s ease infinite;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.slider {
+  margin: 10rem auto;
+  // display: flex;
 }
 @keyframes shine {
   0% {

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { SkillItems } from "./SkillItems";
 import { Experience } from "./Experience";
+import Carousel from "../../components/carousel/Carousel";
 
 export default function About() {
   const [noOfElement, setnoOfElement] = useState(9);
@@ -16,6 +17,7 @@ export default function About() {
   };
 
   let history = useHistory();
+
   const pageVariants = {
     animate: {
       opacity: 1,
@@ -89,7 +91,9 @@ export default function About() {
             </div>
           </motion.div>
         </div>
-
+        <div>
+          <Carousel />
+        </div>
         <div className="app__about-footer">
           <img
             className="about-down-arrow"
